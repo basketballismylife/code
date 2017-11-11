@@ -1,0 +1,37 @@
+Định Lý Fulkerson
+
+* Lát cắt:
+- Cho mạng G = (V, E). Một lát cắt là một phân hoạch X giao Y = V, X hợp Y = rỗng.
+Sao cho: s thuộc X, t thuộc Y.
+
+Định lý Fulkerson: Giá trị của luồng cực đại luôn bằng giá trị của lát cắt hẹp nhất.
+X = {u thuộc V, cl[u] = 1};
+Y = {u thuộc V, cl[u] = 0};
+
+Áp dụng: - Bài toán tối ưu -> đưa về bài toán cực tiểu -> mô hình bằng lát cắt -> dùng luồng.
+
+* LIGHTING:
+
+- Một hình chữ nhất <=> Đồ thị 2 phía. Trong đó, bên trái là các hàng, bên phải là các cột. Mỗi ô tương ứng là 1 cạnh. nối dòng với cột.
+=> Ta phát biểu lại bài toán: Cho đồ thị 2 phía, hãy tìm ít nhất các đỉnh thuộc hai bên để các cạnh đều có một đầu mút được chọn.
+
+	x1, x2, ..., xp => chọn bên trái.
+	y1, y2, ..., yp => chọn bên phải.
+	=> p + q = min
+
+* NASA:
+
+- N thí nghiệm với lãi là p1, p2, ..., pn
+- M dụng cụ với chi phí là c1, c2, ..., cm
+
+giả sử  i1, i2, ..., iK
+		j1, j2, ..., jL
+		
+Sao cho tổng (Pi1 + Pi2 + ... + Pik) - (Cj1 + Cj2 + ... + Cjk) -> max
+ <=> tổng Pi - ((Pi1 + ... + Pik) - (Cj1 + ... + Cjk)) -> min
+ 
+ Tổng thí nghiệm không thực hiện + tổng dụng cụ mang đi đạt min.
+ 
+Ý tưởng L dùng đồ thị 2 phía :
+- X là các thí nghiệm
+- Y là các dụng cụ thí nghiệm.

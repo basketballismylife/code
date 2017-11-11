@@ -1,0 +1,12 @@
+Bài toán phủ đường tối thiểu
+----------------------------
+
+Bài toán: Cho G = (V, E) là một DAG. Hãy tìm tập tối thiểu các đường đi trên G sao cho mỗi đỉnh của G đều thuộc vào một đường đi.
+
+Ý tưởng: Xây dựng đồ thị 2 phía:
+X = {x1, ..., xn}
+Y = {y1, ..., yn}
+- Cạnh (xi -> yj) khi có cạnh nối từ i->j.
+- Khởi đầu: tập P gồm n đường đi, mỗi đường đi có đúng một đỉnh. 
+- Gọi M là một cặp ghép trên đồ thị 2 phía. Khi đó, (xi, yj) thuộc M <=> sẽ là điểm cuối của một đường đi này và là điểm đầu của một đường đi khác.
+Khi đó, số đường đi = n - |M|.
