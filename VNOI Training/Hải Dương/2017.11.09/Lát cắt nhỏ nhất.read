@@ -3,6 +3,7 @@
 * Lát cắt:
 - Cho mạng G = (V, E). Một lát cắt là một phân hoạch X giao Y = V, X hợp Y = rỗng.
 Sao cho: s thuộc X, t thuộc Y.
+- Tổng độ thông qua của các cung (u, v) với u thuộc X, v thuộc Y được gọi là giá trị của lát cắt.
 
 Định lý Fulkerson: Giá trị của luồng cực đại luôn bằng giá trị của lát cắt hẹp nhất.
 X = {u thuộc V, cl[u] = 1};
