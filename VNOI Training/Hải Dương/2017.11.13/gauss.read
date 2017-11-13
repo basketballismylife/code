@@ -1,0 +1,27 @@
+giải hệ phương trình đồng dư (GAUSS)
+
+B1: Đưa hệ phương trình về dạng
+(a11 * x1 + a12 * x2 + ... + a1n * xn) đồng dư với c1
+...
+...
+...
+(an1 * x1 + ... + ann * xn) % 2 đồng dư với cn
+
+for i = 1 -> n;
+u = i;
+while (u < n && a[u, i] == 0) u++;
+if (u <= n) {
+	- Đổi dòng (i, u);
+	for (u = i + 1; u <= n; ++u) if (a(u, i))
+		- Cộng dòng (u, i)
+}	
+
+void đổi dòng(u, v) {
+	for  = 1 -> n swap(a(u, j), a(v, j))
+	swap(cu, cv);
+}
+
+void cộng dòng(u, v) {
+	for j = 1 -> n a(u, j) = (a(u, j) + a(v, j)) % 2
+	c(u) = (c(u) + c(v)) % 2
+}
