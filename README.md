@@ -1,1 +1,1 @@
-﻿Problemset, source codes, solution of some problem i have done.
+﻿Problemset, source codes, solution of some problem I have done.
